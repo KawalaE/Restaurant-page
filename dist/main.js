@@ -1,0 +1,1 @@
+(()=>{let e=document.querySelector("#content"),t=document.createElement("div");t.textContent="siemka",e.appendChild(t)})();
