@@ -76,6 +76,7 @@
     color:#03C988;
     font-weight: 500;
     font-size: 35px;
+    margin-left: 50px;
 }
 .content{
     display: flex;
@@ -89,6 +90,10 @@
     align-items: center;
     justify-content: center;
     padding: 25px;
+    font-size: 20px;
+    max-width: 700px;
+    margin-left: 50px;
+   
 }
 .slider{
 
