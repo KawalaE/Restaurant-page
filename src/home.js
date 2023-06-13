@@ -5,13 +5,48 @@
  * a default page.
  */
 import './style.css';
-function generateHomePage(){
+let pageContent = document.querySelector('#content');
+
+function createElement(type, text, addClass, parent){
+    const el = document.createElement(type);
+    el.innerText = text;
+    el.classList.add(addClass);
+    parent.appendChild(el);
+    return el;
+}
+function createNavigatorBar(){
+    let universalHeader = createElement('div', '', 'header', pageContent);
+    let logo = createElement('div', 'Mixology Manor', 'logo', universalHeader);
+    let nav = createElement('div', '', 'navigation', universalHeader);
+    let homeBtn = createElement('button', 'Home', 'button', nav);
+    let menuBtn = createElement('button', 'Menu', 'button', nav);
+    let contactBtn = createElement('button', 'Contact', 'button', nav);
+} 
+
+function generateHomeBackground(){
     let pageContent = document.querySelector('#content');
     pageContent.classList.add('background');
-    let circle = document.createElement('div');
-    circle.classList.add('circle');
-
-    pageContent.appendChild(circle)
-    console.log('here');
+    let circle = createElement('div', '', 'circle',pageContent);
+   
 }
-generateHomePage();
+function generateHomeContent(){
+    let midContent = createElement('div', '', 'content', pageContent);
+    let description = createElement('div', '', 'description', midContent);
+    let slider = createElement('div', '', 'slider', midContent);
+    description.textContent = ` Step into The Mixology Manor, 
+    a vibrant and captivating cocktail bar where mixology 
+    takes center stage. Our bar is a fusion of creativity, 
+    innovation, and a hint of mystery. The atmosphere is electric, 
+    with an industrial-chic interior, pulsating with colorful lights 
+    and stylish décor. As you enter, you'll be greeted by skilled mixologists, 
+    true artists of the craft, who will take you on a journey of unique flavors 
+    and unforgettable experiences.`
+}
+function initializehomePage(){
+    generateHomeBackground();
+    createNavigatorBar();
+    generateHomeContent();
+    
+}
+initializehomePage();
+export default createElement;
