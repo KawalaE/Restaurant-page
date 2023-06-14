@@ -31,14 +31,15 @@ function generateHomeBackground(){
 }
 function generateHomeContent(){
     let midContent = createElement('div', '', 'content', pageContent);
-    let description = createElement('div', '', 'description', midContent);
+    let description = createElement('div', '', 'leftSide', midContent);
+    let descriptionTitle = createElement('h2', '', 'desc-title', description);
+    let descriptionContent =createElement('div', '', 'desc', description);
     let slider = createElement('div', '', 'slider', midContent);
-    description.textContent = ` Step into The Mixology Manor, 
+    descriptionTitle.textContent = "Mixology Manor - Your Spirited Playground!";
+    descriptionContent.textContent = ` Step into The Mixology Manor, 
     a vibrant and captivating cocktail bar where mixology 
     takes center stage. Our bar is a fusion of creativity, 
-    innovation, and a hint of mystery. The atmosphere is electric, 
-    with an industrial-chic interior, pulsating with colorful lights 
-    and stylish décor. As you enter, you'll be greeted by skilled mixologists, 
+    innovation, and a hint of mystery. As you enter, you'll be greeted by skilled mixologists, 
     true artists of the craft, who will take you on a journey of unique flavors 
     and unforgettable experiences.`
 }
