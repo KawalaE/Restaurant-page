@@ -10,6 +10,12 @@
     src:  url('./assets/fonts/Quicksand-Light.woff2') format('woff2'),
           url('./assets/fonts/Quicksand-Light.woff') format('woff');
 }
+#content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /*** Home Page Styling ***/
 .home-background{
     width: 100wv;
@@ -41,8 +47,59 @@
     background-color: transparent;
     color: white;
     border: none;
+    transition:.2s ease-in-out;
 }
 .navigator-button:hover{
     color: rgb(255, 94, 94);
     cursor: pointer;
+}
+.home-content{
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-box{
+    background-color: rgb(34, 34, 34);
+    opacity: 95%;
+    width: 1000px;
+    min-height: 700px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+.home-info{
+    color: white;
+    font-weight:500;
+    font-size: 1.6rem;
+    padding: 20px;
+    height: 300px;
+    width: 800px;
+    text-justify: auto;
+}
+.home-img-box{
+
+}
+.footer{
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    opacity: 95%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content{
+    color: red;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.github-logo{
+    height: 28px;
+    transition:.5s ease-in-out;
+}
+.github-logo:hover{
+    transform: scale(1.2);
+    rotate: 1turn;
 }
