@@ -5,6 +5,7 @@
     font-family: 'QuickSand', sans-serif;
     font-size: 16px;
 }
+body { min-height: 100vh; }
 @font-face {
     font-family: 'QuickSand';
     src:  url('./assets/fonts/Quicksand-Light.woff2') format('woff2'),
@@ -18,8 +19,6 @@
 }
 /*** Home Page Styling ***/
 .home-background{
-    width: 100wv;
-    height:100vh;
     background-position: center;
     background-size: cover;
     background-image: url('./assets/pictures/sushi-house.jpg');
@@ -62,12 +61,36 @@
 .home-box{
     background-color: rgb(34, 34, 34);
     opacity: 95%;
-    width: 1000px;
-    min-height: 700px;
+    width: 900px;
+    height: 700px;
     border-radius: 5%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+}
+.swiper-container{
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-width: 0;
+    overflow: hidden;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    max-width: 200px;
+    height: 200px;
+    
+}
+.swiper-slide img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 4%;
+}
+.slider-wrapper{
+    
 }
 .home-info{
     color: white;
@@ -77,9 +100,6 @@
     height: 300px;
     width: 800px;
     text-justify: auto;
-}
-.home-img-box{
-
 }
 .footer{
     height: 50px;

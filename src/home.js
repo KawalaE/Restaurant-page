@@ -5,6 +5,12 @@ let content = document.querySelector('#content');
 import Logo from './assets/pictures/logo.png'
 import Icon from './assets/pictures/sushi-icon.png'
 import Footer  from './assets/pictures/github-mark.svg'
+import SliderImage_1 from './assets/pictures/food/food_1.jpg'
+import SliderImage_2 from './assets/pictures/food/food_2.jpg'
+import SliderImage_3 from './assets/pictures/food/food_3.jpg'
+import SliderImage_4 from './assets/pictures/food/food_4.jpg'
+import SliderImage_5 from './assets/pictures/food/food_5.jpg'
+import SliderImage_6 from './assets/pictures/food/food_6.jpg'
 
 const myIcon = new Image();
 myIcon.src = Icon;
@@ -43,6 +49,7 @@ function initializeNavigation(){
     let contactButton = createElement('button', 'Contact', 'navigator-button', navigation);
 
 }
+
 function initializeHomeContent(){
     let homeContent = createElement('div', '', 'home-content', content);
     let homeBox = createElement('div', '', 'home-box', homeContent);
@@ -54,6 +61,59 @@ function initializeHomeContent(){
     city, Sushi House offers a wide range of traditional and 
     contemporary sushi creations, prepared with the freshest 
     ingredients and expert craftsmanship.`
+
+    const food1 = new Image();
+    food1.src = SliderImage_1;
+    
+    const food2 = new Image();
+    food2.src = SliderImage_2;
+
+    const food3 = new Image();
+    food3.src = SliderImage_3;
+
+    const food4 = new Image();
+    food4.src = SliderImage_4;
+    
+    const food5 = new Image();
+    food5.src = SliderImage_5;
+
+    const food6 = new Image();
+    food6.src = SliderImage_6;
+
+    let swiper = createElement('div', '', 'swiper-container', homeBox);
+    let swiperWrapper = createElement('div', '', 'swiper-wrapper', swiper);
+    let swiperSlide_1 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_1.append(food1);
+    let swiperSlide_2 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_2.append(food2);
+    let swiperSlide_3 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_3.append(food3);
+    let swiperSlide_4 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_4.append(food4);
+    let swiperSlide_5 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_5.append(food5);
+    let swiperSlide_6 = createElement('div', '', 'swiper-slide', swiperWrapper);
+    swiperSlide_6.append(food6);
+    
+    var Swiper1 = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        initialSlide: 2,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth:100,
+          modifier: 10,
+          initialSlide: 3,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination",
+           clickable: true
+        }
+    });
 }
 function initializeFooter(){
     let footer = createElement('div', '', 'footer',content);
