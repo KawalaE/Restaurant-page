@@ -36,7 +36,7 @@ function setPageIcon(icon){
     setFavicon.setAttribute('href', icon);
     headTitle.appendChild(setFavicon);
 }
-function initializeNavigation(){
+export function initializeNavigation(){
     setPageIcon(myIcon.src);
     const myLogo = new Image();
     myLogo.src = Logo;
@@ -47,14 +47,15 @@ function initializeNavigation(){
     let homeButton = createElement('button','Home', 'navigator-button', navigation);
     let menuButton = createElement('button', 'Menu', 'navigator-button', navigation);
     let contactButton = createElement('button', 'Contact', 'navigator-button', navigation);
-
 }
 
 function initializeHomeContent(){
     let homeContent = createElement('div', '', 'home-content', content);
     let homeBox = createElement('div', '', 'home-box', homeContent);
+    let slogan = createElement('div', '', 'home-slogan', homeBox);
     let homeInfo = createElement('div', '', 'home-info', homeBox);
-
+    
+    slogan.textContent = `"Delight in Every Bite at Sushi House!"`;
     homeInfo.textContent = `Sushi House is a popular sushi 
     restaurant known for its exquisite Japanese cuisine and 
     exceptional dining experience. Located in the heart of the 
@@ -101,21 +102,26 @@ function initializeHomeContent(){
         centeredSlides: true,
         slidesPerView: 'auto',
         initialSlide: 2,
+
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
-          depth:100,
-          modifier: 10,
+          depth: 28,
+          modifier: 4,
           initialSlide: 3,
           slideShadows: true
         },
         pagination: {
           el: ".swiper-pagination",
            clickable: true
-        }
+        },
+        loop: true,
+        autoplay: {
+            delay: 2000,
+        },
     });
 }
-function initializeFooter(){
+export function initializeFooter(){
     let footer = createElement('div', '', 'footer',content);
     let footerContent = createElement('div', 'Created by KawalaE', 'footer-content', footer);
     let githubMark = document.createElement('a');

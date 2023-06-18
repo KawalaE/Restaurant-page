@@ -34,6 +34,8 @@ body { min-height: 100vh; }
     background-color: rgb(0, 0, 0);
     padding: 40px;
     opacity: 95%;
+    box-shadow: 0px 15px 10px -18px #fff9f9;    
+    
 }
 .navigation{
     display: flex;
@@ -51,6 +53,7 @@ body { min-height: 100vh; }
 .navigator-button:hover{
     color: rgb(255, 94, 94);
     cursor: pointer;
+    scale: (0.95);
 }
 .home-content{
     max-height: 900px;
@@ -60,7 +63,7 @@ body { min-height: 100vh; }
 }
 .home-box{
     background-color: rgb(34, 34, 34);
-    opacity: 95%;
+    opacity: 98%;
     width: 900px;
     height: 700px;
     border-radius: 5%;
@@ -68,38 +71,45 @@ body { min-height: 100vh; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(255, 94, 94);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .swiper-container{
-    max-width: 100%;
-    padding-top: 50px;
+    max-width: 90%;
+    padding-top: 30px;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     min-width: 0;
     overflow: hidden;
 }
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    max-width: 200px;
-    height: 200px;
-    
+    max-width: 300px;
+    height: 300px;
+    margin: 0 20px 0 20px;
 }
 .swiper-slide img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border: 2px solid white;
     border-radius: 4%;
 }
-.slider-wrapper{
-    
+.home-slogan{
+    font-style: italic;
+    color: rgb(255, 94, 94);
+    font-weight:800;
+    font-size: 2rem;
 }
 .home-info{
     color: white;
     font-weight:500;
     font-size: 1.6rem;
     padding: 20px;
-    height: 300px;
     width: 800px;
-    text-justify: auto;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .footer{
     height: 50px;
@@ -109,9 +119,10 @@ body { min-height: 100vh; }
     gap: 15px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 15px 10px 10px #fff9f9;
 }
 .footer-content{
-    color: red;
+    color: rgb(255, 94, 94);
     font-size: 1.1rem;
     font-weight: bold;
 }
