@@ -11,7 +11,15 @@ function createMenu(){
     let menuBox = createElement('div', '', 'menu-box', menuContent)
     let menuItem = createElement('div', '', 'menu-item', menuBox);
     let foodImg = createElement('div', '', 'menu-img', menuItem);
-    let foodInfo = createElement('div', '', 'menu-info', menuItem)
+    let menuText = createElement('div', '', 'menu-text', menuItem);
+    let foodTitle = createElement('div', 'Salmon Poke Bowl', 'menu-title', menuText);
+    let foodInfo = createElement('div', '', 'menu-info', menuText);
+    foodImg.append(food1);
+    foodInfo.textContent = `Fresh, premium salmon marinated to
+     perfection. Served over seasoned sushi rice with a colorful 
+     medley of vegetables. Topped with creamy avocado, savory seaweed
+    salad, and a drizzle of soy sauce dressing. Customize with optional extras.
+     Enjoy the vibrant flavors of our Salmon Poke Bowl.`
 }
 
 export function createMenuPage(){
