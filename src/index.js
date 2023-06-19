@@ -13,4 +13,5 @@ import { createMenuPage } from './menu';
 
 //createHomePage();
 //createContactPage();
+
 createMenuPage();
