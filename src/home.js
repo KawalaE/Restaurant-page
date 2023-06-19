@@ -12,10 +12,29 @@ import SliderImage_4 from './assets/pictures/food/food_4.jpg'
 import SliderImage_5 from './assets/pictures/food/food_5.jpg'
 import SliderImage_6 from './assets/pictures/food/food_6.jpg'
 
+
+export const food1 = new Image();
+food1.src = SliderImage_1;
+
+export const food2 = new Image();
+food2.src = SliderImage_2;
+
+export const food3 = new Image();
+food3.src = SliderImage_3;
+
+export const food4 = new Image();
+food4.src = SliderImage_4;
+
+export const food5 = new Image();
+food5.src = SliderImage_5;
+
+export const food6 = new Image();
+food6.src = SliderImage_6;
+
 const myIcon = new Image();
 myIcon.src = Icon;
 
-const FooterIcon = new Image();
+export const FooterIcon = new Image();
 FooterIcon.src = Footer;
 
 export function createElement(type, text, addClass, parent){
@@ -26,18 +45,18 @@ export function createElement(type, text, addClass, parent){
     return el;
 }
 
-function initializeBackground(){
+export function initializeBackground(){
     content.classList.add('home-background');
 } 
-function setPageIcon(icon){
+export function setPageIcon(){
     let headTitle = document.querySelector('head');
     let setFavicon = document.createElement('link');
     setFavicon.setAttribute('rel', 'shortcut icon');
-    setFavicon.setAttribute('href', icon);
+    setFavicon.setAttribute('href', myIcon.src);
     headTitle.appendChild(setFavicon);
 }
 export function initializeNavigation(){
-    setPageIcon(myIcon.src);
+    setPageIcon();
     const myLogo = new Image();
     myLogo.src = Logo;
     let topBar = createElement('div', '', 'navigation-bar', content);
@@ -62,24 +81,6 @@ function initializeHomeContent(){
     city, Sushi House offers a wide range of traditional and 
     contemporary sushi creations, prepared with the freshest 
     ingredients and expert craftsmanship.`
-
-    const food1 = new Image();
-    food1.src = SliderImage_1;
-    
-    const food2 = new Image();
-    food2.src = SliderImage_2;
-
-    const food3 = new Image();
-    food3.src = SliderImage_3;
-
-    const food4 = new Image();
-    food4.src = SliderImage_4;
-    
-    const food5 = new Image();
-    food5.src = SliderImage_5;
-
-    const food6 = new Image();
-    food6.src = SliderImage_6;
 
     let swiper = createElement('div', '', 'swiper-container', homeBox);
     let swiperWrapper = createElement('div', '', 'swiper-wrapper', swiper);

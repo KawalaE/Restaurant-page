@@ -1,7 +1,8 @@
 import './home'
 import './style.css'
-import {createHomePage} from './home'
-
+import { createHomePage } from './home'
+import { createContactPage } from './contact';
+import { createMenuPage } from './menu';
 
 /**
  * This file should contain tab switching
@@ -10,4 +11,6 @@ import {createHomePage} from './home'
 
 
 
-createHomePage();
+//createHomePage();
+//createContactPage();
+createMenuPage();
