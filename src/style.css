@@ -55,13 +55,13 @@ body { min-height: 100vh; }
     cursor: pointer;
     scale: (0.95);
 }
-.home-content {
+.home-content, .contact-background {
     max-height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-box{
+.home-box, .contact-box{
     background-color: rgb(34, 34, 34);
     opacity: 98%;
     width: 900px;
@@ -181,4 +181,8 @@ body { min-height: 100vh; }
     color: rgb(255, 94, 94);
     font-size: 1.5rem;
     font-weight: bolder;
+}
+.contact-content img{
+    height: 500px;
+    border-radius: 3%;
 }

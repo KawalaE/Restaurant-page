@@ -1,22 +1,24 @@
 import './style.css'
-import { createElement } from "./home";
+import { createElement} from "./home";
 import { initializeBackground } from "./home";
-import { setPageIcon } from "./home";
 import { initializeNavigation } from "./home";
-import { initializeFooter } from "./home";
+import { initializeFooter} from "./home";
+import Map from './assets/pictures/map.png';
 
-import Logo from './assets/pictures/logo.png'
-import Icon from './assets/pictures/sushi-icon.png'
-import Footer from './assets/pictures/github-mark.svg'
+const myMap= new Image();
+myMap.src = Map;
 
-const FooterIcon = new Image();
-FooterIcon.src = Footer;
+let content = document.querySelector('#content');
 
-const myIcon = new Image();
-myIcon.src = Icon;
-
+function initializeContactInfo(){
+    const contactBackground = createElement('div', '', 'contact-background', content);
+    const contactBox = createElement('div', '', 'contact-box', contactBackground);
+    const contactContent = createElement('div', '', 'contact-content', contactBox);
+    contactContent.append(myMap);
+}
 export function createContactPage(){
     initializeBackground();
     initializeNavigation();
+    initializeContactInfo();
     initializeFooter();
 }

@@ -12,6 +12,6 @@ import { createMenuPage } from './menu';
 
 
 //createHomePage();
-//createContactPage();
+createContactPage();
 
-createMenuPage();
+//createMenuPage();
