@@ -42,7 +42,7 @@ body { min-height: 100vh; }
     gap: 80px;
     
 }
-.navigator-button{
+.home-button, .menu-button, .contact-button{
     font-size: 2rem;
     font-weight: bolder;
     background-color: transparent;
@@ -50,7 +50,7 @@ body { min-height: 100vh; }
     border: none;
     transition:.2s ease-in-out;
 }
-.navigator-button:hover{
+.home-button:hover, .menu-button:hover, .contact-button:hover{
     color: rgb(255, 94, 94);
     cursor: pointer;
     scale: (0.95);

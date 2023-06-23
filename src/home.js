@@ -63,9 +63,13 @@ export function initializeNavigation(){
     let logo = createElement('div', '', 'logo', topBar);
     logo.appendChild(myLogo);
     let navigation = createElement('div', '', 'navigation', topBar);
-    let homeButton = createElement('button','Home', 'navigator-button', navigation);
-    let menuButton = createElement('button', 'Menu', 'navigator-button', navigation);
-    let contactButton = createElement('button', 'Contact', 'navigator-button', navigation);
+    let homeButton = createElement('button','Home', 'home-button', navigation);
+    let menuButton = createElement('button', 'Menu', 'menu-button', navigation);
+    let contactButton = createElement('button', 'Contact', 'contact-button', navigation);
+    homeButton.classList.add('home-button');
+    menuButton.classList.add('menu-button');
+    contactButton.classList.add('contact-button');
+
 }
 
 function initializeHomeContent(){
