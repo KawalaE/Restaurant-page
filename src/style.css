@@ -164,7 +164,7 @@ body { min-height: 100vh; }
     border-radius: 4%;
 }
 
-.menu-info{
+.menu-info, .contact-detail{
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -177,12 +177,27 @@ body { min-height: 100vh; }
     gap: 15px;
 
 }
-.menu-title{
+.menu-title, .contact-title{
     color: rgb(255, 94, 94);
     font-size: 1.5rem;
     font-weight: bolder;
 }
+.contact-content{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
 .contact-content img{
     height: 500px;
     border-radius: 3%;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-detail{
+    white-space: pre;
+    line-height:  1.8;
 }
