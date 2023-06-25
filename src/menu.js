@@ -1,7 +1,7 @@
 import './style.css';
 import {
   food1, food2, food3, food4, food5, food6,
-  initializeFooter, initializeNavigation, createElement, initializeBackground,
+  initializeFooter, initializeNavigation, createElement,
 } from './home';
 
 const content = document.getElementById('content');
@@ -28,9 +28,7 @@ function createMenu() {
   const rollsDishDescription = `Indulge in the perfect combination of 
     flavors and textures with our Philadelphia Rolls. These delectable 
     sushi rolls feature a luscious filling of fresh salmon and creamy 
-    cream cheese, encased in a delicate layer of sushi rice and seaweed.
-    Each bite offers a delightful blend of savory salmon, rich cream 
-    cheese, and the subtle umami flavors of the sushi rice and seaweed.`;
+    cream cheese, encased in a delicate layer of sushi rice and seaweed.`;
 
   const sashimiDishDescription = `Fresh, thinly sliced sashimi served with
     vibrant red tobiko. Experience the pure flavors of premium fish 
@@ -61,7 +59,6 @@ function createMenu() {
 }
 
 export default function createMenuPage() {
-  initializeBackground();
   initializeNavigation();
   createMenu();
   initializeFooter();

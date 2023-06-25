@@ -10,6 +10,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  ignorePatterns: ['bundle.js'],
   rules: {
     'no-unused-vars': 'off',
     'import/no-unresolved': 'off',

@@ -1,6 +1,6 @@
 import './style.css';
 import {
-  createElement, initializeBackground, initializeNavigation, initializeFooter,
+  createElement, initializeNavigation, initializeFooter,
 } from './home';
 import Map from './assets/pictures/map.png';
 
@@ -25,7 +25,6 @@ function initializeContactInfo() {
   contactDetails.textContent += 'Country: United States \r\n';
 }
 export default function createContactPage() {
-  initializeBackground();
   initializeNavigation();
   initializeContactInfo();
   initializeFooter();

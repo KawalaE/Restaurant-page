@@ -44,10 +44,6 @@ export function createElement(type, text, addClass, parent) {
   parent.appendChild(el);
   return el;
 }
-
-export function initializeBackground() {
-  content.classList.add('home-background');
-}
 export function setPageIcon() {
   const headTitle = document.querySelector('head');
   const setFavicon = document.createElement('link');
@@ -136,7 +132,6 @@ export function initializeFooter() {
 }
 export function createHomePage() {
   setPageIcon(myIcon.src);
-  initializeBackground();
   initializeNavigation();
   initializeHomeContent();
   initializeFooter();
