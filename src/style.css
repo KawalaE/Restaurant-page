@@ -17,7 +17,6 @@ body { min-height: 100vh; }
     flex-direction: column;
     justify-content: space-between;
 }
-/*** Home Page Styling ***/
 .home-background{
     background-position: center;
     background-size: cover;
